@@ -20,6 +20,8 @@ xcuserdata
 DerivedData
 *.xcuserstate
 
+project.xcworkspace/
+
 # Compiled Object files
 *.slo
 *.lo

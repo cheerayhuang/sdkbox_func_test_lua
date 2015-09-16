@@ -85,9 +85,11 @@ def main(argv):
 
     if params['import']:
         if params['plugins'] != '':
-            return import_plugins(params['plugins'])
+            if import_plugins(params['plugins']) != 0:
+                return 1
         else:
-            return import_plugins(params['one_plugin'], False)
+            if import_plugins(params['one_plugin'], False) != 0:
+                return 1
 
     if params['run']:
         return run_proj()

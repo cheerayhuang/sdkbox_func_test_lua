@@ -85,7 +85,6 @@ function MyPluginMgr:ctor()
     end)
 
 
-    --[[
     -- Flurry
     sdkbox.PluginFlurryAnalytics:init()
     sdkbox.PluginFlurryAnalytics:setListener(function(data)
@@ -97,16 +96,15 @@ function MyPluginMgr:ctor()
         local eventName = "test event1"
         sdkbox.PluginFlurryAnalytics:logEvent(eventName);
     end)
-    --]]
 
 
     -- Google Analytics
-    sdkbox.PluginGoogleAnalytics:init()
+    --sdkbox.PluginGoogleAnalytics:init()
 
 
-    --[[
     -- IAP
     sdkbox.IAP:init()
+
     sdkbox.IAP:setListener(function(args)
         if "onSuccess" == args.event then
             local product = args.product
@@ -132,11 +130,10 @@ function MyPluginMgr:ctor()
             print("unknow event ", args.event)
         end
     end)
-    --]]
 
 
     -- Kochava
-    sdkbox.PluginKochava:init()
+    --sdkbox.PluginKochava:init()
 
 
     -- Tune
@@ -162,14 +159,11 @@ function MyPluginMgr:ctor()
     end)
 
     -- Facebook
-    --[[
     sdkbox.PluginFacebook:init()
     sdkbox.PluginFacebook:setListener(function(event)
         print("PluginFacebook callback")
         print(event)
     end)
-
-    --]]
 
     -- AgeCheq
     sdkbox.PluginAgeCheq:init()
@@ -198,7 +192,6 @@ function MyPluginMgr:chartboostFunc()
     sdkbox.PluginChartboost:show("Level Complete")
 end
 
---[[
 function MyPluginMgr:flurrySendData()
     sdkbox.PluginFlurryAnalytics:startSession()
 
@@ -260,7 +253,8 @@ function MyPluginMgr:flurrySendData()
     sdkbox.PluginFlurryAnalytics:setReportLocation(true);
 
     sdkbox.PluginFlurryAnalytics:clearLocation();
-    //chendu, sichuan, china
+
+    --chendu, sichuan, china
     sdkbox.PluginFlurryAnalytics:setLatitude(104.06, 30.67, 0, 0);
 
     sdkbox.PluginFlurryAnalytics:setSessionReportsOnCloseEnabled(true);
@@ -282,8 +276,7 @@ function MyPluginMgr:flurryanalyticsFunc()
     self:flurrySendData()
 end
 
---]]
-
+--[[
 function MyPluginMgr:googleanalyticsFunc()
     print("googleanalytics: test")
     sdkbox.PluginGoogleAnalytics:logTiming("Startup", 0, "timing name", "timing label")
@@ -297,13 +290,13 @@ function MyPluginMgr:googleanalyticsFunc()
     sdkbox.PluginGoogleAnalytics:logException("Algo se ha roto", false)
     sdkbox.PluginGoogleAnalytics:dispatchPeriodically(60)
 end
+--]]
 
---[[
 function MyPluginMgr:iapFunc()
     print("IAP: purchase test")
     sdkbox.IAP:purchase("remove_ads")
+    sdkbox.IAP:purchase("coin_package")
 end
---]]
 
 function MyPluginMgr:kochavaFunc()
     print("Kochava: test")
@@ -311,7 +304,6 @@ function MyPluginMgr:kochavaFunc()
     sdkbox.PluginKochava:spatialEvent("test", 100, 101, 102)
 end
 
---[[
 -- Tune api failed.
 function MyPluginMgr:testTuneMeasureEvent()
     -- TODO
@@ -326,7 +318,7 @@ function MyPluginMgr:tuneFunc()
     sdkbox.PluginTune:setUserEmail("natalie@somedomain.com");
     sdkbox.PluginTune:setUserName("natalie123");
     sdkbox.PluginTune:setAge(43);
-    sdkbox.PluginTune:setGender(sdkbox.PluginTune:GenderFemale);
+    sdkbox.PluginTune:setGender(sdkbox.PluginTune.GenderFemale);
     sdkbox.PluginTune:setUserId("US13579");
     sdkbox.PluginTune:setFacebookUserId("321321321321");
     sdkbox.PluginTune:setGoogleUserId("11223344556677");
@@ -338,8 +330,6 @@ function MyPluginMgr:tuneFunc()
     --self:testTuneMeasureEvent()
 end
 
---]]
-
 function MyPluginMgr:vungleFunc()
     print("Vungle: show video")
     sdkbox.PluginVungle:show("video")
@@ -348,9 +338,7 @@ function MyPluginMgr:vungleFunc()
     sdkbox.PluginVungle:show("reward")
 end
 
---[[
 function MyPluginMgr:facebookFunc()
-    sdkbox.PluginFacebook:login()
 
     print("check FacebookCheckStatus")
 
@@ -368,10 +356,10 @@ function MyPluginMgr:facebookFunc()
     t.imageUrl = "http://cocos2d-x.org/images/logo.png"
     sdkbox.PluginFacebook:dialog(t)
 
+    --sdkbox.PluginFacebook:login()
 end
---]]
 
-function MyPluginMgr:onAgeCheqCheck()
+function MyPluginMgr:agecheqFunc()
     print("onAgeCheqCheck")
     sdkbox.PluginAgeCheq:check("1426")
     sdkbox.PluginAgeCheq:associateData("1426", "ikfill");

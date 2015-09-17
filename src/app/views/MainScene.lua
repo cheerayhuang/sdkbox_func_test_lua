@@ -7,15 +7,18 @@ local MainScene = class("MainScene", cc.load("mvc").ViewBase)
 
 --local plugins = {'chartboost', 'vungle', 'adcolony', 'agecheq', 'facebook', 'flurryanalytics', 'googleanalytics', 'iap', 'tune', 'kochava'}
 
--- local plugins = {'facebook'}
-local plugins = {'chartboost', 'vungle', 'adcolony', 'googleanalytics', 'tune', 'kochava', 'agecheq'}
+-- 'googleanalytics' and 'kochava' are blocked by patch bugs.
+
+local plugins = {'facebook', 'flurryanalytics', 'iap', 'chartboost', 'vungle', 'adcolony', 'tune', 'agecheq'}
+
+local INTERVAL = 2.0
 
 MainScene.RESOURCE_FILENAME = "MainScene.csb"
 
 function MainScene:onCreate()
     local mgr = import(".MyPluginMgr", CURRENT_MODULE_NAME).new()
     local handler = nil
-    local delayTime = 2.0
+    local delayTime = INTERVAL
     local handlers = {}
 
     for _, plugin in pairs(plugins) do
@@ -26,7 +29,7 @@ function MainScene:onCreate()
                     delayTime,
                     false
         )
-        delayTime = delayTime + 2
+        delayTime = delayTime + INTERVAL
     end
 
 end

@@ -52,6 +52,7 @@
 		952D4FF41B9EA5CC00806D56 /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06B1A69863D00945236 /* RuntimeLuaImpl.cpp */; };
 		952D4FF51B9EA67E00806D56 /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C0691A69863D00945236 /* lua_debugger.c */; };
 		95694562A9A3A1502B2E61BF /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFA4AF39E31B4EF2C49E961 /* libluacocos2d iOS.a */; };
+		959CB4C81BAAE20800333F0B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959CB4C71BAAE20800333F0B /* CFNetwork.framework */; };
 		9FB6C06D1A69863D00945236 /* lua_debugger.h in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06A1A69863D00945236 /* lua_debugger.h */; };
 		9FB6C06E1A69863D00945236 /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C0691A69863D00945236 /* lua_debugger.c */; };
 		9FB6C06F1A69863D00945236 /* RuntimeLuaImpl.h in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06C1A69863D00945236 /* RuntimeLuaImpl.h */; };
@@ -128,6 +129,7 @@
 		7AFA4AF39E31B4EF2C49E961 /* libluacocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d iOS.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios/libluacocos2d iOS.a"; sourceTree = "<absolute>"; };
 		87EB60261A7271B60085F57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConsoleWindow.xib; sourceTree = "<group>"; };
 		87EB60281A7271C60085F57C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ConsoleWindow.strings"; sourceTree = "<group>"; };
+		959CB4C71BAAE20800333F0B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		9EC3425A8C325BEC57F3A001 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
 		9FB6C0691A69863D00945236 /* lua_debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_debugger.c; sourceTree = "<group>"; };
 		9FB6C06A1A69863D00945236 /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				959CB4C81BAAE20800333F0B /* CFNetwork.framework in Frameworks */,
 				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
 				3EEEDB61197107C0006A9FF8 /* MediaPlayer.framework in Frameworks */,
 				D6B061351803AC000077942B /* CoreMotion.framework in Frameworks */,
@@ -330,6 +333,7 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				959CB4C71BAAE20800333F0B /* CFNetwork.framework */,
 				DA9E7D871AB1ABCC004B27C8 /* Security.framework */,
 				5200BEC91A53D9A500AC45E4 /* Security.framework */,
 				3EEEDB60197107C0006A9FF8 /* MediaPlayer.framework */,

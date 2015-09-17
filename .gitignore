@@ -77,6 +77,7 @@ FBSDKLoginKit.framework/
 FBSDKShareKit.framework/
 Chartboost.framework/
 PluginChartboost.framework/
+PluginFyber.framework/
 
 proj.android/jni/pluginadcolony/
 proj.android/jni/pluginagecheq/
@@ -130,6 +131,11 @@ frameworks/runtime-src/Classes/PluginVungleLuaHelper.cpp
 frameworks/runtime-src/Classes/PluginVungleLuaHelper.h
 frameworks/runtime-src/Classes/SDKBoxLuaHelper.cpp
 frameworks/runtime-src/Classes/SDKBoxLuaHelper.h
+frameworks/runtime-src/Classes/PluginFyberLua.cpp
+frameworks/runtime-src/Classes/PluginFyberLua.hpp
+frameworks/runtime-src/Classes/PluginFyberLuaHelper.cpp
+frameworks/runtime-src/Classes/PluginFyberLuaHelper.h
+
 frameworks/runtime-src/proj.android/jni/pluginadcolony/
 frameworks/runtime-src/proj.android/jni/pluginagecheq/
 frameworks/runtime-src/proj.android/jni/pluginchartboost/
@@ -140,6 +146,7 @@ frameworks/runtime-src/proj.android/jni/pluginiap/
 frameworks/runtime-src/proj.android/jni/pluginkochava/
 frameworks/runtime-src/proj.android/jni/plugintune/
 frameworks/runtime-src/proj.android/jni/pluginvungle/
+frameworks/runtime-src/proj.android/jni/pluginfyber/
 frameworks/runtime-src/proj.android/jni/sdkbox/
 frameworks/runtime-src/proj.android/libs/
 frameworks/runtime-src/proj.android/res/xml/

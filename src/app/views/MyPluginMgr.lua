@@ -173,6 +173,7 @@ function MyPluginMgr:ctor()
         end
     end)
 
+    -- fyber
     sdkbox.PluginFyber:init()
     sdkbox.PluginFyber:setListener(function(args)
         if "onVirtualCurrencyConnectorFailed" == args.name then
@@ -197,6 +198,12 @@ function MyPluginMgr:ctor()
         else
             print("unknow event ", args.name)
         end
+    end)
+
+    -- review
+    sdkbox.PluginReview:init()
+    sdkbox.PluginReview:setListener(function(args)
+        dump(args, "Review Callback:")
     end)
 end
 
@@ -395,7 +402,12 @@ function MyPluginMgr:fyberFunc()
     sdkbox.PluginFyber:showOfferWall("rmb")
     sdkbox.PluginFyber:requestOffers("rmb")
     sdkbox.PluginFyber:requestDeltaOfCoins("rmb")
+end
 
+function MyPluginMgr:reviewFunc()
+    print("[review] calling review api")
+
+    sdkbox.PluginReview:show()
 end
 
 return MyPluginMgr

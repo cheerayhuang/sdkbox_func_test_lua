@@ -4,7 +4,7 @@ local CURRENT_MODULE_NAME = ...
 local MainScene = class("MainScene", cc.load("mvc").ViewBase)
 
 -- 'googleanalytics' and 'kochava' are blocked by patch bugs.
-local plugins = {'fyber', 'facebook', 'flurryanalytics', 'iap', 'chartboost', 'vungle', 'adcolony', 'tune', 'agecheq'}
+local plugins = {'review', 'fyber', 'facebook', 'flurryanalytics', 'iap', 'chartboost', 'vungle', 'adcolony', 'tune', 'agecheq'}
 
 local INTERVAL = 2.0
 

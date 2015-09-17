@@ -90,8 +90,8 @@ function MyPluginMgr:ctor()
         local ret = json.decode(data)
         print("apiKey:", ret.apiKey, "sessionId:", ret.sessionId)
         -- check session state
-        print("Flurry analytics session exist: ", f:activeSessionExists())
-        print("Flurry analytics session: ", f:getSessionID())
+        print("Flurry analytics session exist: ", sdkbox.PluginFlurryAnalytics:activeSessionExists())
+        print("Flurry analytics session: ", sdkbox.PluginFlurryAnalytics:getSessionID())
         local eventName = "test event1"
         sdkbox.PluginFlurryAnalytics:logEvent(eventName);
     end)
@@ -130,10 +130,8 @@ function MyPluginMgr:ctor()
         end
     end)
 
-
     -- Kochava
     --sdkbox.PluginKochava:init()
-
 
     -- Tune
     sdkbox.PluginTune:init()
@@ -174,6 +172,32 @@ function MyPluginMgr:ctor()
             print(data)
         end
     end)
+
+    sdkbox.PluginFyber:init()
+    sdkbox.PluginFyber:setListener(function(args)
+        if "onVirtualCurrencyConnectorFailed" == args.name then
+            dump(args, "onVirtualCurrencyConnectorFailed:")
+        elseif "onVirtualCurrencyConnectorSuccess" == args.name then
+            dump(args, "onVirtualCurrencyConnectorSuccess:")
+        elseif "onCanShowInterstitial" == args.name then
+            dump(args, "onCanShowInterstitial")
+
+        elseif "onInterstitialDidShow" == args.name then
+            dump(args, "onInterstitialDidShow")
+        elseif "onInterstitialDismiss" == args.name then
+            dump(args, "onInterstitialDismiss")
+        elseif "onInterstitialFailed" == args.name then
+            dump(args, "onInterstitialFailed:")
+        elseif "onBrandEngageClientReceiveOffers" == args.name then
+            dump(args, "onBrandEngageClientReceiveOffers:")
+        elseif "onBrandEngageClientChangeStatus" == args.name then
+            dump(args, "onBrandEngageClientChangeStatus:")
+        elseif "onOfferWallFinish" == args.name then
+            dump(args, "onOfferWallFinish")
+        else
+            print("unknow event ", args.name)
+        end
+    end)
 end
 
 
@@ -210,7 +234,7 @@ function MyPluginMgr:flurrySendData()
     origin = "other origin";
     originVersion = "other origin version";
     local params = {}
-    parmas['key1'] = 'value1'
+    params['key1'] = 'value1'
     params['key2'] = 'value2'
     sdkbox.PluginFlurryAnalytics:addOrigin(origin, originVersion, params);
 
@@ -359,9 +383,19 @@ function MyPluginMgr:facebookFunc()
 end
 
 function MyPluginMgr:agecheqFunc()
-    print("onAgeCheqCheck")
+    print("[agecheq] calling agecheq api")
     sdkbox.PluginAgeCheq:check("1426")
     sdkbox.PluginAgeCheq:associateData("1426", "ikfill");
+end
+
+function MyPluginMgr:fyberFunc()
+    print("[fyber] calling fyber api")
+
+    sdkbox.PluginFyber:requestInterstitial()
+    sdkbox.PluginFyber:showOfferWall("rmb")
+    sdkbox.PluginFyber:requestOffers("rmb")
+    sdkbox.PluginFyber:requestDeltaOfCoins("rmb")
+
 end
 
 return MyPluginMgr

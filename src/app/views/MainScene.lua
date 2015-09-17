@@ -3,11 +3,8 @@ local CURRENT_MODULE_NAME = ...
 
 local MainScene = class("MainScene", cc.load("mvc").ViewBase)
 
---local plugins = {'chartboost', 'vungle', 'adcolony', 'agecheq', 'facebook', 'flurryanalytics', 'googleanalytics', 'iap', 'tune', 'kochava'}
-
 -- 'googleanalytics' and 'kochava' are blocked by patch bugs.
-
-local plugins = {'facebook', 'flurryanalytics', 'iap', 'chartboost', 'vungle', 'adcolony', 'tune', 'agecheq'}
+local plugins = {'fyber', 'facebook', 'flurryanalytics', 'iap', 'chartboost', 'vungle', 'adcolony', 'tune', 'agecheq'}
 
 local INTERVAL = 2.0
 

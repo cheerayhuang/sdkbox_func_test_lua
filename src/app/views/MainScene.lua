@@ -1,8 +1,6 @@
 
 local CURRENT_MODULE_NAME = ...
 
-local printf = release_print
-
 local MainScene = class("MainScene", cc.load("mvc").ViewBase)
 
 --local plugins = {'chartboost', 'vungle', 'adcolony', 'agecheq', 'facebook', 'flurryanalytics', 'googleanalytics', 'iap', 'tune', 'kochava'}
@@ -35,7 +33,7 @@ function MainScene:onCreate()
 end
 
 function MainScene:test(plugin, tester, handler)
-    printf("Test " .. plugin .. " Begin")
+    print("Test " .. plugin .. " Begin")
     cc.Director:getInstance():getScheduler():unscheduleScriptEntry(handler)
 
     local f = plugin .. 'Func'
@@ -50,7 +48,7 @@ function MainScene:test(plugin, tester, handler)
         end
     end
 
-    printf("Test " .. plugin .. " End")
+    print("Test " .. plugin .. " End")
 end
 
 return MainScene

@@ -1,5 +1,4 @@
 local MyPluginMgr = class("MyPluginMgr")
-local print = release_print
 
 function MyPluginMgr:ctor()
     print("MyPluginMgr")

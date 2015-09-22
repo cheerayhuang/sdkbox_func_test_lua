@@ -98,7 +98,7 @@ function MyPluginMgr:ctor()
 
 
     -- Google Analytics
-    --sdkbox.PluginGoogleAnalytics:init()
+    sdkbox.PluginGoogleAnalytics:init()
 
 
     -- IAP
@@ -131,7 +131,7 @@ function MyPluginMgr:ctor()
     end)
 
     -- Kochava
-    --sdkbox.PluginKochava:init()
+    sdkbox.PluginKochava:init()
 
     -- Tune
     sdkbox.PluginTune:init()
@@ -306,7 +306,6 @@ function MyPluginMgr:flurryanalyticsFunc()
     self:flurrySendData()
 end
 
---[[
 function MyPluginMgr:googleanalyticsFunc()
     print("googleanalytics: test")
     sdkbox.PluginGoogleAnalytics:logTiming("Startup", 0, "timing name", "timing label")
@@ -320,7 +319,6 @@ function MyPluginMgr:googleanalyticsFunc()
     sdkbox.PluginGoogleAnalytics:logException("Algo se ha roto", false)
     sdkbox.PluginGoogleAnalytics:dispatchPeriodically(60)
 end
---]]
 
 function MyPluginMgr:iapFunc()
     print("IAP: purchase test")

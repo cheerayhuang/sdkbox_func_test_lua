@@ -4,6 +4,7 @@ function MyPluginMgr:ctor()
     print("MyPluginMgr")
 
     -- AdColony
+    --[[
     sdkbox.PluginAdColony:init()
     sdkbox.PluginAdColony:setListener(function(args)
         if "onAdColonyChange" == args.name then
@@ -28,6 +29,7 @@ function MyPluginMgr:ctor()
             dump(info, "onAdColonyFinished:")
         end
     end)
+    --]]
 
     -- Chartboost
     sdkbox.PluginChartboost:init()
@@ -174,6 +176,7 @@ function MyPluginMgr:ctor()
     end)
 
     -- fyber
+    --[[
     sdkbox.PluginFyber:init()
     sdkbox.PluginFyber:setListener(function(args)
         if "onVirtualCurrencyConnectorFailed" == args.name then
@@ -199,6 +202,7 @@ function MyPluginMgr:ctor()
             print("unknow event ", args.name)
         end
     end)
+    --]]
 
     -- review
     sdkbox.PluginReview:init()
@@ -207,13 +211,14 @@ function MyPluginMgr:ctor()
     end)
 end
 
-
+--[[
 function MyPluginMgr:adcolonyFunc()
     print("AdColony: show video")
     sdkbox.PluginAdColony:show("video")
     print("AdColony: show v4vc")
     sdkbox.PluginAdColony:show("v4vc")
 end
+--]]
 
 function MyPluginMgr:chartboostFunc()
     print("Chartboost: show default")
@@ -393,6 +398,7 @@ function MyPluginMgr:agecheqFunc()
     sdkbox.PluginAgeCheq:associateData("1426", "ikfill");
 end
 
+--[[
 function MyPluginMgr:fyberFunc()
     print("[fyber] calling fyber api")
 
@@ -401,6 +407,7 @@ function MyPluginMgr:fyberFunc()
     sdkbox.PluginFyber:requestOffers("rmb")
     sdkbox.PluginFyber:requestDeltaOfCoins("rmb")
 end
+--]]
 
 function MyPluginMgr:reviewFunc()
     print("[review] calling review api")

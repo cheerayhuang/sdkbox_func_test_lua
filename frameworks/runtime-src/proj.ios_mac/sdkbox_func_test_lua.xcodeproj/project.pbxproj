@@ -52,7 +52,7 @@
 		952D4FF41B9EA5CC00806D56 /* RuntimeLuaImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06B1A69863D00945236 /* RuntimeLuaImpl.cpp */; };
 		952D4FF51B9EA67E00806D56 /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C0691A69863D00945236 /* lua_debugger.c */; };
 		95694562A9A3A1502B2E61BF /* libluacocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFA4AF39E31B4EF2C49E961 /* libluacocos2d iOS.a */; };
-		959CB4C81BAAE20800333F0B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959CB4C71BAAE20800333F0B /* CFNetwork.framework */; };
+		95FD58901BAAA53000E594AA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FD588F1BAAA53000E594AA /* CFNetwork.framework */; };
 		9FB6C06D1A69863D00945236 /* lua_debugger.h in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06A1A69863D00945236 /* lua_debugger.h */; };
 		9FB6C06E1A69863D00945236 /* lua_debugger.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C0691A69863D00945236 /* lua_debugger.c */; };
 		9FB6C06F1A69863D00945236 /* RuntimeLuaImpl.h in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6C06C1A69863D00945236 /* RuntimeLuaImpl.h */; };
@@ -87,7 +87,7 @@
 		15A8A4871834C90E00142BE0 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		15C1568D1683131500D239F2 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "../../cocos2d-x/cocos2dx/platform/third_party/ios/libraries/libcurl.a"; sourceTree = "<group>"; };
 		1AF4C402178663F200122817 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		34CE46238859FE30BFEE6689 /* libluacocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d Mac.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/mac/libluacocos2d Mac.a"; sourceTree = "<absolute>"; };
+		34CE46238859FE30BFEE6689 /* libluacocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac/libluacocos2d Mac.a"; sourceTree = "<absolute>"; };
 		3EB51526195187AF006966AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		3EEEDB60197107C0006A9FF8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		5023810717EBBCAC00990C9B /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -125,12 +125,12 @@
 		5200BEC91A53D9A500AC45E4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		521A8E6E19F0C3D200D177D7 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		521A8E6F19F0C3D200D177D7 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
-		6817411198F86DA5C05E7E8D /* libsimulator iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsimulator iOS.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios/libsimulator iOS.a"; sourceTree = "<absolute>"; };
-		7AFA4AF39E31B4EF2C49E961 /* libluacocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d iOS.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios/libluacocos2d iOS.a"; sourceTree = "<absolute>"; };
+		6817411198F86DA5C05E7E8D /* libsimulator iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsimulator iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libsimulator iOS.a"; sourceTree = "<absolute>"; };
+		7AFA4AF39E31B4EF2C49E961 /* libluacocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libluacocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libluacocos2d iOS.a"; sourceTree = "<absolute>"; };
 		87EB60261A7271B60085F57C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ConsoleWindow.xib; sourceTree = "<group>"; };
 		87EB60281A7271C60085F57C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ConsoleWindow.strings"; sourceTree = "<group>"; };
-		959CB4C71BAAE20800333F0B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		9EC3425A8C325BEC57F3A001 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
+		95FD588F1BAAA53000E594AA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		9EC3425A8C325BEC57F3A001 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios/libcocos2d iOS.a"; sourceTree = "<absolute>"; };
 		9FB6C0691A69863D00945236 /* lua_debugger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_debugger.c; sourceTree = "<group>"; };
 		9FB6C06A1A69863D00945236 /* lua_debugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_debugger.h; sourceTree = "<group>"; };
 		9FB6C06B1A69863D00945236 /* RuntimeLuaImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeLuaImpl.cpp; sourceTree = "<group>"; };
@@ -143,14 +143,14 @@
 		9FF504831A5E87B100AFDA55 /* ConsoleWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleWindowController.m; sourceTree = "<group>"; };
 		9FFC07351A4A764100AED399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9FFC07371A4A765100AED399 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.xib"; sourceTree = "<group>"; };
-		AF8A40AB99AD75FF96038510 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
+		AF8A40AB99AD75FF96038510 /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac/libcocos2d Mac.a"; sourceTree = "<absolute>"; };
 		C03781B718BF655400FE4F13 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = ../../../res; sourceTree = "<group>"; };
 		C03781B818BF655400FE4F13 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = ../../../src; sourceTree = "<group>"; };
 		C05D1C111923449100B808A4 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = ../../../config.json; sourceTree = "<group>"; };
 		C07828F418B4D72E00BD2287 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C07828F618B4D72E00BD2287 /* SimulatorApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorApp.h; sourceTree = "<group>"; };
 		C07828F718B4D72E00BD2287 /* SimulatorApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SimulatorApp.mm; sourceTree = "<group>"; };
-		CEA9491CB227352C06EA3F97 /* libsimulator Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsimulator Mac.a"; path = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/mac/libsimulator Mac.a"; sourceTree = "<absolute>"; };
+		CEA9491CB227352C06EA3F97 /* libsimulator Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libsimulator Mac.a"; path = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac/libsimulator Mac.a"; sourceTree = "<absolute>"; };
 		D6B061341803AC000077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		DA9E7D871AB1ABCC004B27C8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F293B3C815EB7BE500256477 /* sdkbox_func_test_lua iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sdkbox_func_test_lua iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959CB4C81BAAE20800333F0B /* CFNetwork.framework in Frameworks */,
+				95FD58901BAAA53000E594AA /* CFNetwork.framework in Frameworks */,
 				5200BECA1A53D9A500AC45E4 /* Security.framework in Frameworks */,
 				3EEEDB61197107C0006A9FF8 /* MediaPlayer.framework in Frameworks */,
 				D6B061351803AC000077942B /* CoreMotion.framework in Frameworks */,
@@ -333,7 +333,7 @@
 		F293B3CB15EB7BE500256477 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				959CB4C71BAAE20800333F0B /* CFNetwork.framework */,
+				95FD588F1BAAA53000E594AA /* CFNetwork.framework */,
 				DA9E7D871AB1ABCC004B27C8 /* Security.framework */,
 				5200BEC91A53D9A500AC45E4 /* Security.framework */,
 				3EEEDB60197107C0006A9FF8 /* MediaPlayer.framework */,
@@ -593,11 +593,11 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../Classes",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib/protobuf-lite",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = " /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/mac";
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-image_base",
@@ -608,7 +608,7 @@
 					"$(_COCOS_LIB_MAC_END)",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/platform/mac /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/glfw3/include/mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/platform/mac /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/glfw3/include/mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Debug;
 		};
@@ -628,11 +628,11 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../Classes",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib/protobuf-lite",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = mac/Info.plist;
-				LIBRARY_SEARCH_PATHS = " /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/mac";
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/mac";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-image_base",
@@ -643,7 +643,7 @@
 					"$(_COCOS_LIB_MAC_END)",
 				);
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/platform/mac /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/glfw3/include/mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/platform/mac /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/glfw3/include/mac $(_COCOS_HEADER_MAC_BEGIN) $(_COCOS_HEADER_MAC_END)";
 			};
 			name = Release;
 		};
@@ -669,7 +669,7 @@
 				HEADER_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6 /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/base /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/physics /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/math/kazmath /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/2d /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/ui /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/network /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/audio/include /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/editor-support /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/extensions /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/chipmunk/include/chipmunk /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/lua/luajit/include /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/lua/tolua /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/scripting/lua-bindings/manual /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/scripting/lua-bindings/auto /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib/protobuf-lite";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1 /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/base /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/physics /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/math/kazmath /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/2d /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/ui /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/network /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/audio/include /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/editor-support /Applications/Cocos/frameworks/cocos2d-x-3.8.1/extensions /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/chipmunk/include/chipmunk /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/lua/luajit/include /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/lua/tolua /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/scripting/lua-bindings/manual /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/scripting/lua-bindings/auto /Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib /Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite";
 			};
 			name = Debug;
 		};
@@ -690,7 +690,7 @@
 				HEADER_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6 /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/base /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/physics /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/math/kazmath /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/2d /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/ui /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/network /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/audio/include /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/editor-support /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/extensions /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/chipmunk/include/chipmunk /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/lua/luajit/include /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/external/lua/tolua /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/scripting/lua-bindings/manual /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/scripting/lua-bindings/auto /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib/protobuf-lite";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Cocos/frameworks/cocos2d-x-3.8.1 /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/base /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/physics /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/math/kazmath /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/2d /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/ui /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/network /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/audio/include /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/editor-support /Applications/Cocos/frameworks/cocos2d-x-3.8.1/extensions /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/chipmunk/include/chipmunk /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/lua/luajit/include /Applications/Cocos/frameworks/cocos2d-x-3.8.1/external/lua/tolua /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/scripting/lua-bindings/manual /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/scripting/lua-bindings/auto /Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib /Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -710,12 +710,12 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../Classes",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib/protobuf-lite",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib/protobuf-lite",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = " /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios";
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
@@ -730,7 +730,7 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Debug;
@@ -750,11 +750,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../Classes/protobuf-lite",
 					"$(SRCROOT)/../Classes",
-					"/private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/tools/simulator/libsimulator/lib",
+					"/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/simulator/libsimulator/lib",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = " /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/prebuilt/ios";
+				LIBRARY_SEARCH_PATHS = " /Applications/Cocos/frameworks/cocos2d-x-3.8.1/prebuilt/ios";
 				OTHER_LDFLAGS = (
 					"$(_COCOS_LIB_IOS_BEGIN)",
 					"$(_COCOS_LIB_IOS_END)",
@@ -769,7 +769,7 @@
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /private/var/jenkins/engines-prebuilt/cocos2d-x-3.6/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Cocos/frameworks/cocos2d-x-3.8.1/cocos/platform/ios $(_COCOS_HEADER_IOS_BEGIN) $(_COCOS_HEADER_IOS_END)";
 				VALID_ARCHS = "arm64 armv7";
 			};
 			name = Release;
